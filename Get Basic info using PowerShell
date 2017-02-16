@@ -1,0 +1,9 @@
+#OS version
+#Install date
+#Service pack version
+#OS architecture
+#Boot device
+#Build number
+#Host name
+
+Get-CimInstance Win32_OperatingSystem | Select-Object  Caption, InstallDate, ServicePackMajorVersion, OSArchitecture, BootDevice,  BuildNumber, CSName | FL
